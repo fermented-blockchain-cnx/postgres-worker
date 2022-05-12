@@ -1,4 +1,4 @@
-name = "my-worker"
+name = "postgres-worker"
 #main = "src/index.ts"
 main = "dist/index.mjs"
 compatibility_date = "2022-05-12"

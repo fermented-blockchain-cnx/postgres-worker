@@ -1,5 +1,5 @@
 {
-  "name": "my-worker",
+  "name": "postgres-worker",
   "version": "0.0.0",
   "devDependencies": {
     "@cloudflare/workers-types": "^3.10.0",

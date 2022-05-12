@@ -36,7 +36,7 @@ export default {
       await client.connect()
       const result: any = await client.queryObject<number>`SELECT t1,temp,humid,time FROM public.model_tdb LIMIT 100;`
       // client.queryArray<number>`SELECT t1,temp,humid,time FROM public.model_tdb LIMIT 100;`
-      return new Response(JSON.stringify(result.rows))
+      return new Response(JSON.stringify(result.rows, null, 2))
 
     } catch (e) {
       return new Response((e as Error).message)
